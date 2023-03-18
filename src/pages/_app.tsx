@@ -12,7 +12,7 @@ export default function App({ Component, pageProps }: AppProps) {
  return (
   <div className="min-h-screen">
    <Navbar />
-   <div className="container min-h-full mx-auto">
+   <div className="container  min-h-[80vh] mx-auto">
     <Component {...pageProps} />
    </div>
    <Footer />

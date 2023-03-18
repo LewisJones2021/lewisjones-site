@@ -9,7 +9,7 @@ export const aboutMe = () => {
    <h1 className=" text-gray-400 flex justify-center text-2xl mx-auto font-header">Hey 👋</h1>
    <div className="flex justify-center flex-col max-w-xl p-5 mx-auto font-cardContent ">
     <p className="text-gray-500 md:text-xl md:leading-6 ">
-     I’m an aspiring software developer using multiple technologies, for example: React, JavaScript, HTML5 and CSS. I’ve
+     I’m a junior front-end developer using multiple technologies, for example: React, JavaScript, HTML5 and CSS. I’ve
      been learning software development in a self taught environment for a couple of years, whilst working on open
      source web applications and using online video courses and creating personal mini projects.
     </p>
