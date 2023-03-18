@@ -22,8 +22,7 @@ type NavLinkProps = {
 
 const NavLink = function NavLinkProps(props: NavLinkProps) {
  // Check if the current page matches the href link.
- const router = useRouter();
- const isActive = router.pathname.startsWith(props.href);
+ const isActive = props.activePage === props.href;
 
  return (
   <Link legacyBehavior href={props.href}>
