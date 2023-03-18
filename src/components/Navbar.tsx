@@ -11,6 +11,7 @@ export const pages = [
  { name: 'Contact', path: '/contact' },
 
  { name: 'Projects', path: '/projects' },
+ { name: 'Home', path: '/' },
 ];
 
 type NavLinkProps = {
@@ -53,7 +54,7 @@ export const Navbar = () => {
     <Link href="/">Lewis Jones</Link>
    </h1>
 
-   <ul className="hidden md:flex uppercase text-sm">
+   <ul className="hidden md:flex uppercase ">
     {pages.map((page) => (
      <li key={`pages-${page.path}`} className="p-4 cursor-pointer font-bold hover:text-green-800">
       <NavLink activePage={router.pathname} href={page.path}>
@@ -77,7 +78,7 @@ export const Navbar = () => {
     className={
      nav ? ' z-50 bg-black fixed left-0 top-0 w-[30%] h-full pt-10 ease-in-out duration-500' : 'fixed left-[-100%] '
     }>
-    <ul className="p-2 mt-5 uppercase font-header text-xs font-bold ">
+    <ul className="p-2 mt-5 uppercase font-header text-[8px] font-bold  ">
      {pages.map((page) => (
       <li key={`page-${page.path}`} className="p-4 cursor-pointer font-bold hover:text-green-800">
        <NavLink activePage={router.pathname} href={page.path}>
