@@ -9,7 +9,7 @@ export const projectsArray = [
   description:
    'Pomolog is a web based full-stack time managment app, which I have been contributing to the front-end development, using React with the NextJS framework and Tailwind CSS for styling.',
   imageSrc: '/react-image.jpeg',
-  link: 'https://github.com/LewisJones2021/timetracker-react',
+  link: 'https://www.pomolog.app/',
  },
  {
   title: 'Photo Gallery',

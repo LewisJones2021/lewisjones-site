@@ -40,7 +40,7 @@ function ContactForm(props: ContactFormProps) {
 
  return (
   <div className="h-screen">
-   <p className=" md:text-xl flex justify-center text-gray-500 text-l mb-0 mt-10 font-header ">
+   <p className=" md:text-xl flex justify-center text-gray-500 text-sm mb-0 mt-10 font-header ">
     If you&apos;d like to get in touch, please fill out the form below😀
    </p>
 
