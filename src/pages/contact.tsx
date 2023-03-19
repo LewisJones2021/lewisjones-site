@@ -39,19 +39,19 @@ function ContactForm(props: ContactFormProps) {
  }
 
  return (
-  <div className="h-screen">
-   <p className=" md:text-xl flex justify-center text-gray-500 text-sm mb-0 mt-10 font-header ">
+  <div className="h-screen w-full">
+   <p className="  flex justify-center text-gray-500 text-[12px] mb-0 mt-10 font-header sm:text-[5px] md:text-xl">
     If you&apos;d like to get in touch, please fill out the form below😀
    </p>
 
-   <div className="w-[400px] h-[490px] p-8 bg-green-800 rounded-xl mx-auto mt-[30px] ">
+   <div className="w-[300px] h-[490px] p-8 bg-gray-800 opacity-90 rounded-xl mx-auto mt-[30px] md:w-[405px] ">
     <form className="flex justify-center flex-col p-5 " onSubmit={handleSubmit}>
      <label className="text-white mb-1 text-xl font-cardHeading" htmlFor="name">
       Full name
      </label>
 
      <input
-      className="p-2 rounded-xl mt-2 mb-2 text-white font-cardContent  bg-green-600 bg-opacity-70  "
+      className="p-2 rounded-xl mt-2 mb-2 text-white font-cardContent  bg-green-800  "
       id="fName"
       type="name"
       name="fName"
@@ -63,7 +63,7 @@ function ContactForm(props: ContactFormProps) {
      </label>
 
      <input
-      className="mt-2 p-2 rounded-xl font-cardContent text-white bg-green-600 opacity-70 "
+      className="mt-2 p-2 rounded-xl font-cardContent text-white bg-green-800 "
       id="email"
       type="email"
       name="email"
@@ -75,7 +75,7 @@ function ContactForm(props: ContactFormProps) {
      <textarea
       onChange={handleTextChange}
       maxLength={maxCharacters}
-      className="bg-green-600 opacity-60 h-[100px] mt-2 font-cardContent rounded-xl p-2 text-white resize-none"
+      className="bg-green-800 h-[100px] mt-2 font-cardContent rounded-xl p-2 text-white resize-none"
       id="message"
       name="message"
      />
@@ -85,12 +85,14 @@ function ContactForm(props: ContactFormProps) {
       {`${text.length}/${maxCharacters}`}
      </p>
      <button
-      className="bg-green-600 opacity-60 text-white font-button text-2xl w-[250px] mx-auto mt-1 rounded-xl p-1"
+      className="bg-green-600 opacity-60 text-white font-button text-2xl w-[150px] mx-auto mt-1 rounded-xl p-1 md:w-[250px] "
       type="submit"
       disabled={state.submitting}>
       Send
      </button>
-     <p className="text-sm text-white font-cardContent mx-auto mt-4">Alternitavely, please call me on: 07488308595</p>
+     <p className="text-[10px] text-white font-cardContent mx-auto mt-6 md:text-[15px]">
+      Alternitavely, please call me on: 07488308595
+     </p>
     </form>
    </div>
   </div>

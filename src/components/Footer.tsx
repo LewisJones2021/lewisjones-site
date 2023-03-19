@@ -6,13 +6,10 @@ export const Footer = () => {
   <div className=" flex flex-col text-[8px] text-gray-400  px-[20px]  py-[30px] w-full  bg-green-900 font-header md:text-sm">
    <p className=" mb-2  ">Made by Lewis, featuring lots of ☕️</p>
    <p className="flex ">
-    Find me on
-    <p className="font-bold">
-     &nbsp;
-     <Link className="hover:text-gray-800" href="https://www.linkedin.com/in/lewis-jones-947534224/">
-      Linkden👨‍💼
-     </Link>
-    </p>
+    Find me on &nbsp;
+    <Link className="hover:text-gray-800 font-bold" href="https://www.linkedin.com/in/lewis-jones-947534224/">
+     Linkden👨‍💼
+    </Link>
    </p>
   </div>
  );
