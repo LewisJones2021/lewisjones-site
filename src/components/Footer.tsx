@@ -8,7 +8,7 @@ export const Footer = () => {
    <p className="flex ">
     Find me on &nbsp;
     <Link className="hover:text-gray-800 font-bold" href="https://www.linkedin.com/in/lewis-jones-947534224/">
-     Linkden👨‍💼
+     Linkedin👨‍💼
     </Link>
    </p>
   </div>
