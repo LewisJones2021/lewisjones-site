@@ -12,6 +12,6 @@
 @tailwind utilities;
 
 body {
- background-color: rgba(26, 23, 23, 0.538);
+ background-color: #222227;
  min-height: 100vh;
 }
