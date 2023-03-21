@@ -14,7 +14,7 @@ interface cardProps {
 const Card: React.FC<cardProps> = ({ title, description, imageSrc, link }) => {
  return (
   <div className="mb-5">
-   <div className="card w-96 bg-base-100 shadow-xl  ">
+   <div className="card w-96 bg-gray-700 shadow-xl  ">
     <figure className="px-10 pt-10">
      <img src={imageSrc} className="rounded-xl blur-[2px]" />
     </figure>

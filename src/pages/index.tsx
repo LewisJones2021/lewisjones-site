@@ -36,16 +36,18 @@ export const Home = () => {
      </button>
     </div>
    </div>
-   <div className="flex justify-center mt-5 ">
-    <div className="mx-auto p-6 md:px-10  md:w-[100%]">
+   <div className="flex justify-center mt-5  ">
+    <div className="mx-auto p-6 md:px-10  md:w-[100%] ">
      {projectArray.map((card) => (
-      <div key={card.project} className="hero  bg-base-200 md:py-18">
-       <div className="hero-content flex-col lg:flex-row-reverse">
+      <div key={card.project} className="hero  bg-gray-700 md:py-18">
+       <div className="hero-content rounded-lg flex-col lg:flex-row-reverse">
         <img src={card.imageSrc} className="max-w-[180px] rounded-lg shadow-2xl md:max-w-[300px] " />
         <div>
-         <h1 className="text-sm font-cardHeading md:text-xl">{card.title}</h1>
-         <p className="py-6 font-cardContent max-w-[250px] text-sm md:text-lg md:max-w-xl ">{card.description}</p>
-         <button className="btn  bg-green-900 font-button">
+         <h1 className="text-sm text-gray-400 font-cardHeading md:text-xl">{card.title}</h1>
+         <p className="py-6 text-gray-400 font-cardContent max-w-[250px] text-sm md:text-lg md:max-w-xl ">
+          {card.description}
+         </p>
+         <button className="btn bg-green-900 font-button">
           <Link href={card.link}>View project</Link>
          </button>
         </div>
