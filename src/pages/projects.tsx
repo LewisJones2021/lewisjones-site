@@ -54,7 +54,7 @@ export const projects = () => {
    <div className="flex flex-col items-center justify-center">
     <h1 className=" mb-2 font-header text-gray-500 md:text-xl">Here are some examples of my projects.</h1>
     <Link href="https://github.com/LewisJones2021">
-     <p className="hover:text-green-900  text-gray-500 md:text-xl mb-2"> Click here for a link to my GitHub!</p>
+     <p className="hover:text-green-800  text-green-900 md:text-xl mb-2"> Click here for a link to my GitHub!</p>
     </Link>
    </div>
    <div className="text-white ">

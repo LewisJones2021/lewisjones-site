@@ -2,24 +2,16 @@
 
 import Typed from 'react-typed';
 import Link from 'next/link';
-
-export const projectArray = [
- {
-  title: 'Pomolog.app',
-  description:
-   'Pomolog is a web based full-stack time managment app, which I have been contributing to the front-end development, using React with the NextJS framework and Tailwind CSS for styling.',
-  imageSrc: '/react-image.jpeg',
-  link: 'https://www.pomolog.app/',
-  featuredProject: 'Featured Project',
-  project: '',
- },
-];
+import FactGenerator from '@/components/FactGenerator';
+import useModal from '@/hooks/useModal';
+import Modal from '@/components/Modal';
 
 export const Home = () => {
+ const { isOpen, toggleModal } = useModal();
  return (
   <div className="mt-12">
    <div className=" mx-auto text-white w-[100%] bg-green-900 rounded-lg ">
-    <div className="flex flex-col  text-center   ">
+    <section className="flex flex-col  text-center   ">
      <p className="md:text-2xl text-green-300 font-header uppercase mt-5">Software developer enthusiast</p>
 
      <div>
@@ -34,28 +26,27 @@ export const Home = () => {
      <button className="bg-green-800 opacity-[90%] hover:text-green-300 text-white text-opacity-60 font-button text-[20px] text-center rounded-md px-[8px] py-2 w-[180px] mx-auto mt-5 mb-5">
       <Link href="/contact">Connect with me</Link>
      </button>
-    </div>
+    </section>
    </div>
-   <div className="flex justify-center mt-5  ">
-    <div className="mx-auto p-6 md:px-10  md:w-[100%] ">
-     {projectArray.map((card) => (
-      <div key={card.project} className="hero  bg-gray-700 md:py-18">
-       <div className="hero-content rounded-lg flex-col lg:flex-row-reverse">
-        <img src={card.imageSrc} className="max-w-[180px] rounded-lg shadow-2xl md:max-w-[300px] " />
-        <div>
-         <h1 className="text-sm text-gray-400 font-cardHeading md:text-xl">{card.title}</h1>
-         <p className="py-6 text-gray-400 font-cardContent max-w-[250px] text-sm md:text-lg md:max-w-xl ">
-          {card.description}
-         </p>
-         <button className="btn bg-green-900 font-button">
-          <Link href={card.link}>View project</Link>
-         </button>
-        </div>
-       </div>
-      </div>
-     ))}
+
+   {/* Random fact generator */}
+
+   {/* <FactGenerator /> */}
+   <section className="flex justify-center mt-20">
+    <button
+     onClick={toggleModal}
+     className=" bg-green-800 opacity-[90%] hover:text-green-300 text-white text-opacity-60 font-button text-[15px] text-center rounded-md px-[8px] py-2 w-[180px] mx-auto mt-5 mb-5 md:text-[18px]">
+     Click for a random fact!
+    </button>
+
+    <div className="">
+     <Modal isOpen={isOpen} toggleModal={toggleModal}>
+      <p className=" p-5  font-cardContent text-[10px] md:text-base">
+       <FactGenerator />
+      </p>
+     </Modal>
     </div>
-   </div>
+   </section>
   </div>
  );
 };

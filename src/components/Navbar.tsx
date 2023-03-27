@@ -6,12 +6,13 @@ import React, { useEffect, useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 
 export const pages = [
+ { name: 'Home', path: '/' },
+
  { name: 'About Me', path: '/about-me' },
 
- { name: 'Contact', path: '/contact' },
-
  { name: 'Projects', path: '/projects' },
- { name: 'Home', path: '/' },
+
+ { name: 'Contact', path: '/contact' },
 ];
 
 type NavLinkProps = {
@@ -52,17 +53,17 @@ export const Navbar = () => {
    <h1 className=" hover:text-green-800 font-bold text-2xl">
     <Link href="/">Lewis Jones</Link>
    </h1>
-
-   <ul className="hidden md:flex uppercase ">
-    {pages.map((page) => (
-     <li key={`pages-${page.path}`} className="p-4 cursor-pointer font-bold hover:text-green-800">
-      <NavLink activePage={router.pathname} href={page.path}>
-       {page.name}
-      </NavLink>
-     </li>
-    ))}
-   </ul>
-
+   <nav>
+    <ul className="hidden md:flex uppercase ">
+     {pages.map((page) => (
+      <li key={`pages-${page.path}`} className="p-4 cursor-pointer font-bold hover:text-green-800">
+       <NavLink activePage={router.pathname} href={page.path}>
+        {page.name}
+       </NavLink>
+      </li>
+     ))}
+    </ul>
+   </nav>
    {/* Toggle between each icon */}
    <div onClick={handleNav} className="hover:cursor-pointer block md:hidden">
     {nav ? (
@@ -73,7 +74,7 @@ export const Navbar = () => {
    </div>
 
    {/* Mobile responsive */}
-   <div
+   <nav
     className={
      nav ? ' z-50 bg-black fixed left-0 top-0 w-[30%] h-full pt-10 ease-in-out duration-500' : 'fixed left-[-100%] '
     }>
@@ -86,7 +87,7 @@ export const Navbar = () => {
       </li>
      ))}
     </ul>
-   </div>
+   </nav>
    <div
     onClick={handleNav}
     className={

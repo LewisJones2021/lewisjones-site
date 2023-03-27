@@ -1,6 +1,6 @@
 /** @format */
 
-import QuoteGenerator from '@/components/QuoteGenerator';
+import QuoteGenerator from '@/components/FactGenerator';
 import React from 'react';
 
 export const aboutMe = () => {
@@ -21,6 +21,25 @@ export const aboutMe = () => {
      My main focus recently has been contributing to an open source time managment web application. I am currently
      seeking my first commmercial developer role.
     </p>
+    <aside className="mt-12 text-gray-500  ">
+     <details>
+      <summary className="font-cardHeading text-base cursor-pointer md:text-lg">
+       How many hours a day do I code for?
+      </summary>
+      <p className="font-cardContent text-sm mb-5 md:text-base ">
+       I code for a few hours in the morning, and then up until <time dateTime="17:00">5pm</time> in the evening.
+      </p>
+     </details>
+     <details>
+      <summary className="font-cardHeading text-base mt-8 cursor-pointer md:text-lg">
+       What is my favourtie part about coding/ web-development?
+      </summary>
+      <p className="font-cardContent text-sm md:text-base ">
+       I love seeing instant results with the "Live Server" extention and seeing a project come together, learning
+       everyday is a bonus too!
+      </p>
+     </details>
+    </aside>
    </div>
   </div>
  );

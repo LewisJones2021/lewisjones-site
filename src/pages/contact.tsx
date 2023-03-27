@@ -44,7 +44,7 @@ function ContactForm(props: ContactFormProps) {
     If you&apos;d like to get in touch, please fill out the form below😀
    </p>
 
-   <div className="w-[300px] h-[490px] p-8 bg-gray-800 opacity-90 rounded-xl mx-auto mt-[30px] md:w-[405px] ">
+   <section className="w-[300px] h-[490px] p-8 bg-gray-800 opacity-90 rounded-xl mx-auto mt-[30px] md:w-[405px] ">
     <form className="flex justify-center flex-col p-5 " onSubmit={handleSubmit}>
      <label className="text-white mb-1 text-xl font-cardHeading" htmlFor="name">
       Full name
@@ -90,11 +90,13 @@ function ContactForm(props: ContactFormProps) {
       disabled={state.submitting}>
       Send
      </button>
-     <p className="text-[10px] text-white font-cardContent mx-auto mt-6 md:text-[15px]">
-      Alternitavely, please call me on: 07488308595
-     </p>
+     <aside>
+      <p className="text-[10px] text-white font-cardContent mx-auto mt-6 md:text-[15px]">
+       Alternitavely, please call me on: 07488308595
+      </p>
+     </aside>
     </form>
-   </div>
+   </section>
   </div>
  );
 }
