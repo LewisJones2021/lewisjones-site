@@ -28,6 +28,9 @@ export const Home = () => {
      </button>
     </section>
    </div>
+   <p className="text-white flex justify-center mt-10 font-extrabold font-cardContent p-20 text-xl">
+    Modal coming soon!
+   </p>
   </div>
  );
 };
