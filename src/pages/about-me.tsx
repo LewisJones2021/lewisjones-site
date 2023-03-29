@@ -15,7 +15,7 @@ export const aboutMe = () => {
     </p>
     <p className="text-gray-500 md:text-xl mt-5 md:leading-6">
      Alongside my current tech stack of React, Svelte, HTML, CSS, Tailwind, JavaScript, NPM and Git, I aim to become a
-     full-stack developer using different technoliges such as AWS, TypeScript, Python and Golang.
+     full-stack developer using different technologies such as AWS, TypeScript, Python and Golang.
     </p>
     <p className="text-gray-500 md:text-xl mt-5 md:leading-6">
      My main focus recently has been contributing to an open source time managment web application. I am currently
