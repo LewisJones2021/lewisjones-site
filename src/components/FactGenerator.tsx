@@ -3,46 +3,52 @@
 import React, { useEffect } from 'react';
 import { useState } from 'react';
 
-// type fact = {
-//  fact: string;
-// };
+type fact = {
+ fact: string;
+};
 
-// const API_KEY = 'oJIIQAPO4ZEmk7N0/LFsQQ==VoGV7FLfvQshpn2t';
-// const numberOfFacts = 1;
-
-// const headers = {
-//  'Content-Type': 'application-json',
-//  'X-Api-Key': API_KEY,
-// };
-
+type factResponse = {
+ factsArray: fact[];
+};
+const headers = {
+ 'Content-type': 'application/json',
+};
 export const FactGenerator = () => {
- //  const [fact, setFact] = useState<fact>();
+ const [fact, setFact] = useState<fact>();
 
- //  async function fetchData() {
- //   try {
- //    const res = await fetch('https://api.api-ninjas.com/v1/facts?limit=' + numberOfFacts, {
- //     method: 'GET',
- //     headers: headers,
- //    });
- //    const json: fact[] = await res.json();
- //    setFact(json[0]);
- //   } catch (error) {
- //    console.error('Failed to get fact: ', error);
- //   }
- //  }
+ async function fetchData() {
+  try {
+   const res = await fetch('/api/facts', {
+    method: 'GET',
+    headers: headers,
+   });
 
- //  useEffect(() => {
- //   fetchData();
- //  }, []);
+   const factsJson: factResponse = await res.json();
+   console.log(factsJson);
+   setFact(factsJson.factsArray[randomFact(factsJson.factsArray.length)]);
+   console.log(fact);
+  } catch (error) {
+   console.error('Failed to get fact: ', error);
+  }
+ }
 
- //  if (!fact) {
- //   return <></>;
- //  }
+ useEffect(() => {
+  fetchData();
+ }, []);
 
- return;
- //   <div className="flex justify-center">
- //    <div className="mx-auto mt-20 text-white "> {fact && <p> {fact.fact}</p>}</div>
- //   </div>
- //  );
+ // Return a random number between 0-20.
+ function randomFact(factsLength: number) {
+  return Math.floor(Math.random() * factsLength);
+ }
+
+ if (!fact) {
+  return <></>;
+ }
+
+ return (
+  <div className="flex justify-center">
+   <div className="mx-auto mt-10 text-white font-cardContent">{fact && <p> {fact.fact}</p>}</div>
+  </div>
+ );
 };
 export default FactGenerator;

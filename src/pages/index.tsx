@@ -2,12 +2,12 @@
 
 import Typed from 'react-typed';
 import Link from 'next/link';
-import FactGenerator from '@/components/FactGenerator';
 import useModal from '@/hooks/useModal';
 import Modal from '@/components/Modal';
+import FactGenerator from '@/components/FactGenerator';
 
 export const Home = () => {
- //  const { isOpen, toggleModal } = useModal();
+ const { isOpen, toggleModal } = useModal();
  return (
   <div className="mt-12">
    <div className=" mx-auto text-white w-[100%] bg-green-900 rounded-lg ">
@@ -28,37 +28,19 @@ export const Home = () => {
      </button>
     </section>
    </div>
-   <p className="text-white flex justify-center mt-10 font-extrabold font-cardContent p-20 text-xl">
-    Modal coming soon!
-   </p>
+   <button
+    onClick={toggleModal}
+    className="flex justify-center bg-green-800 opacity-[90%] hover:text-green-300 text-white text-opacity-60 font-button text-[15px] text-center rounded-md px-[8px] py-2 w-[180px] mx-auto mt-[80px] md:text-[18px]">
+    Click for a random fact!
+   </button>
+   <div className="">
+    <Modal isOpen={isOpen} toggleModal={toggleModal}>
+     <div className="text-md flex justify-center font-extrabold font-cardContent p-4 md:text-xl">
+      <FactGenerator />
+     </div>
+    </Modal>
+   </div>
   </div>
  );
 };
 export default Home;
-{
- /* </div>
-   Random fact generator */
-}
-{
- /* <FactGenerator /> */
-}
-{
- /* <section className="flex justify-center mt-20">
-    <button
-     onClick={toggleModal}
-     className=" bg-green-800 opacity-[90%] hover:text-green-300 text-white text-opacity-60 font-button text-[15px] text-center rounded-md px-[8px] py-2 w-[180px] mx-auto mt-5 mb-5 md:text-[18px]">
-     Click for a random fact!
-    </button>
-
-      <div className="">
-     <Modal isOpen={isOpen} toggleModal={toggleModal}>
-      <p className=" p-5  font-cardContent text-[10px] md:text-base">
-       <FactGenerator />
-      </p>
-     </Modal>
-    </div>  
-   </section> */
-}
-{
- /* </div> */
-}
