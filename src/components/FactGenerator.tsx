@@ -47,7 +47,7 @@ export const FactGenerator = () => {
 
  return (
   <div className="flex justify-center">
-   <div className="mx-auto mt-10 text-white font-cardContent">{fact && <p> {fact.fact}</p>}</div>
+   <div className="mx-auto mt-10 text-gray-400 font-cardContent md:text-xl">{fact && <p> {fact.fact}</p>}</div>
   </div>
  );
 };

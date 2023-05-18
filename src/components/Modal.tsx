@@ -15,8 +15,10 @@ function Modal(props: ModalType) {
   <>
    {props.isOpen && (
     <div onClick={props.toggleModal} className="modal modal-open">
-     <div className="modal-box bg-gray-600 mt-12">
-      <h3 className="font-cardHeading text-white p-[10px] text-center text-[25px]">Here's your random fact!</h3>
+     <div className="modal-box bg-gray-800 mt-12">
+      <h3 className="font-cardHeading text-green-700 p-[10px] text-center text-[25px] font-bold">
+       Here's your random fact!
+      </h3>
       {props.children}
 
       <div className="modal-action"></div>

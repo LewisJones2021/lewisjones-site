@@ -10,7 +10,7 @@ import React from 'react';
 
 export default function App({ Component, pageProps }: AppProps) {
  return (
-  <div className="min-h-screen">
+  <div className="min-h-screen ">
    <Navbar />
    <main>
     <div className="container  min-h-[80vh] mx-auto">

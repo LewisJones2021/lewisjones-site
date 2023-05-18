@@ -40,8 +40,8 @@ function ContactForm(props: ContactFormProps) {
 
  return (
   <div className="h-screen w-full">
-   <p className="  flex justify-center text-gray-500 text-[12px] mb-0 mt-10 font-header sm:text-[5px] md:text-xl">
-    If you&apos;d like to get in touch, please fill out the form below😀
+   <p className="  flex justify-center text-gray-500 text-[12px] mb-0 mt-10 font-header sm:text-[15px] md:text-xl">
+    If you&apos;d like to get in touch, please fill out the form below 😀
    </p>
 
    <section className="w-[300px] h-[490px] p-8 bg-gray-800 opacity-90 rounded-xl mx-auto mt-[30px] md:w-[405px] ">
@@ -51,7 +51,7 @@ function ContactForm(props: ContactFormProps) {
      </label>
 
      <input
-      className="p-2 rounded-xl mt-2 mb-2 text-white font-cardContent  bg-green-800  "
+      className="p-2 rounded-xl mt-2 mb-2 text-white font-cardContent  bg-gray-700  "
       id="fName"
       type="name"
       name="fName"
@@ -63,7 +63,7 @@ function ContactForm(props: ContactFormProps) {
      </label>
 
      <input
-      className="mt-2 p-2 rounded-xl font-cardContent text-white bg-green-800 "
+      className="mt-2 p-2 rounded-xl font-cardContent text-white bg-gray-700 "
       id="email"
       type="email"
       name="email"
@@ -75,23 +75,23 @@ function ContactForm(props: ContactFormProps) {
      <textarea
       onChange={handleTextChange}
       maxLength={maxCharacters}
-      className="bg-green-800 h-[100px] mt-2 font-cardContent rounded-xl p-2 text-white resize-none"
+      className="bg-gray-700 h-[100px] mt-2 font-cardContent rounded-xl p-2 text-white resize-none"
       id="message"
       name="message"
      />
      <ValidationError prefix="Message" field="message" errors={state.errors} />
-     <p className="flex justify-end text-red-400 mt-2 font-bold font-cardContent text-md">
+     <p className="flex justify-end text-red-400 mt-2 font-bold font-cardContent text-sm md:text-lg">
       {' '}
       {`${text.length}/${maxCharacters}`}
      </p>
      <button
-      className="bg-green-600 opacity-60 text-white font-button text-2xl w-[150px] mx-auto mt-1 rounded-xl p-1 md:w-[250px] "
+      className="bg-gray-700 opacity-60 text-white font-button text-2xl w-[150px] mx-auto mt-1 rounded-xl p-1 md:w-[250px] "
       type="submit"
       disabled={state.submitting}>
       Send
      </button>
      <aside>
-      <p className="text-[10px] text-white font-cardContent mx-auto mt-6 md:text-[15px]">
+      <p className="text-[10px] text-white font-cardContent mx-auto mt-6 md:text-[15px] font-extrabold">
        Alternitavely, please call me on: 07488308595
       </p>
      </aside>

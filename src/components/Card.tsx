@@ -22,7 +22,7 @@ const Card: React.FC<cardProps> = ({ title, description, imageSrc, link }) => {
      <h1 className="card-title uppercase font-cardHeading md:text-2xl">{title}</h1>
      <p className="font-cardContent">{description}</p>
      <div className="card-actions">
-      <button className="btn bg-green-900 font-button">
+      <button className="btn bg-gray-800 hover:text-green-700 font-button">
        <Link href={link}>View project</Link>
       </button>
      </div>

@@ -28,7 +28,7 @@ const NavLink = function NavLinkProps(props: NavLinkProps) {
  return (
   <Link legacyBehavior href={props.href}>
    <a
-    className={`${isActive ? 'text-green-800' : ''}
+    className={`${isActive ? 'text-green-600' : ''}
     hover:text-green-800`}>
     {props.children}
    </a>
@@ -69,7 +69,7 @@ export const Navbar = () => {
     {nav ? (
      <AiOutlineClose size={20} className="text-green-300" />
     ) : (
-     <AiOutlineMenu size={20} className="text-green-300" />
+     <AiOutlineMenu size={20} className="text-green-700" />
     )}
    </div>
 
