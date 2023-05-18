@@ -5,7 +5,7 @@ import React from 'react';
 
 export const aboutMe = () => {
  return (
-  <div className="mx-auto max-w[60%] h-screen mt-[60px]">
+  <div className="mx-auto max-w[60%] mt-[60px]">
    <h1 className=" text-gray-400 flex justify-center text-2xl mx-auto font-header font-extrabold">Hey 👋</h1>
    <div className="flex justify-center flex-col max-w-xl p-5 mx-auto font-cardContent ">
     <p className="text-gray-400 md:text-xl md:leading-6 ">
