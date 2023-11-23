@@ -26,11 +26,11 @@ export const projectsArray = [
   link: 'https://github.com/LewisJones2021/house-access-frontend',
  },
  {
-  title: 'Current Weather',
+  title: 'Code Snippet',
   description:
-   'Current weather uses a weather API to fetch the current weather and other data e.g "wind-speed" and displays it to the DOM. This project was built with HTML, CSS and JavaScript.',
+   'A closed sourced full-stack Golang social media web app inspired project, which allows users to create code snippets and share them to the community.',
   imageSrc: '/react-image.jpeg',
-  link: 'https://github.com/LewisJones2021/Latest-Weather-Forecast',
+  link: 'https://codeposts.dev',
  },
  {
   title: 'RGB Generator',
