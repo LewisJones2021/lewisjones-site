@@ -5,23 +5,28 @@ import React from 'react';
 
 export const aboutMe = () => {
  return (
-  <div className="mx-auto max-w[60%] mt-[60px]">
-   <h1 className=" text-gray-400 flex justify-center text-2xl mx-auto font-header font-extrabold">Hey 👋</h1>
+  <div className="mx-auto max-w[60%] mt-[60px] ">
+   <h1 className=" text-green-400 flex justify-center text-2xl mx-auto font-header font-extrabold">Hey 👋</h1>
    <div className="flex justify-center flex-col max-w-xl p-5 mx-auto font-cardContent ">
-    <p className="text-gray-400 md:text-xl md:leading-6 ">
-     I’m a junior front-end developer using multiple technologies, for example: React, JavaScript, HTML5 and CSS. I’ve
-     been learning software development in a self taught environment for a couple of years, whilst working on open
-     source web applications and using online video courses and creating personal mini projects.
+    <p className="text-black md:text-xl md:leading-6 ">
+    I am a junior developer who's mostly focused on the front-end, where I've self-taught to break into the software realm. 
+    My learning journey has been a mix of watching YouTube tutorials, taking popular online coding courses, and doing my fair share of googling! 
+    I've been playing around with HTML and CSS for a few years now, and recently, I've ventured into JavaScript to understand the basics of working with APIs and fetching data. 
+    I'm also enjoying crafting interactive web applications and learning along the way.
     </p>
-    <p className="text-gray-400 md:text-xl mt-5 md:leading-6">
-     Alongside my current tech stack of React, Svelte, HTML, CSS, Tailwind, JavaScript, NPM and Git, I aim to become a
-     full-stack developer using different technologies such as AWS, TypeScript, Python and Golang.
+    <p className="text-black md:text-xl mt-5 md:leading-6">
+    The spark for my interest in coding comes from my family and friends, who are talented and passionate software engineers.
+    I've always been intrigued by the mechanics of clicking buttons and generating data on websites, and now I find joy in writing my own code. 
+    Exploring the inner workings of the World Wide Web is truly fascinating.
     </p>
-    <p className="text-gray-400 md:text-xl mt-5 md:leading-6">
-     My main focus recently has been contributing to an open source time managment web application. I am currently
-     seeking my first commmercial developer role.
+    <p className="text-black md:text-xl mt-5 md:leading-6">
+    My main focus recently has been contributing to an open source time managment web application. 
+    I am currently seeking my first commmercial developer role.
     </p>
-    <aside className="mt-12 text-gray-300  ">
+    <p className="text-black md:text-xl mt-5 md:leading-6">
+    <span className='text-green-400 font-extrabold'>Tech stack:</span> HTML, CSS, Tailwind, JavaScript, Golang, MySQL, Wordpress (Elementor)
+    </p>
+    <aside className="mt-12 text-black  ">
      <details>
       <summary className="font-cardHeading text-base cursor-pointer md:text-lg">
        How many hours a day do I code for?

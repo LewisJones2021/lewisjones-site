@@ -40,42 +40,42 @@ function ContactForm(props: ContactFormProps) {
 
  return (
   <div className="h-screen w-full">
-   <p className="  flex justify-center text-gray-500 text-[12px] mb-0 mt-10 font-header sm:text-[15px] md:text-xl">
+   <p className="  flex justify-center text-black text-[12px] mb-0 mt-10 font-header sm:text-[15px] md:text-xl">
     If you&apos;d like to get in touch, please fill out the form below 😀
    </p>
 
-   <section className="w-[300px] h-[490px] p-8 bg-gray-800 opacity-90 rounded-xl mx-auto mt-[30px] md:w-[405px] ">
+   <section className="w-[300px] h-[490px]  mx-auto mt-[30px] md:w-[405px] ">
     <form className="flex justify-center flex-col p-5 " onSubmit={handleSubmit}>
-     <label className="text-white mb-1 text-xl font-cardHeading" htmlFor="name">
+     <label className="text-black mb-1 text-xl font-cardHeading" htmlFor="name">
       Full name
      </label>
 
      <input
-      className="p-2 rounded-xl mt-2 mb-2 text-white font-cardContent  bg-gray-700  "
+      className="p-2 rounded-xl mt-2 mb-2 text-white font-cardContent  bg-black"
       id="fName"
       type="name"
       name="fName"
      />
      <ValidationError prefix="Email" field="full name" errors={state.errors} />
 
-     <label className="text-white  mb-1 text-xl font-cardHeading" htmlFor="email">
+     <label className="text-black  mb-1 text-xl font-cardHeading" htmlFor="email">
       Email address
      </label>
 
      <input
-      className="mt-2 p-2 rounded-xl font-cardContent text-white bg-gray-700 "
+      className="mt-2 p-2 rounded-xl font-cardContent text-white bg-black "
       id="email"
       type="email"
       name="email"
      />
      <ValidationError prefix="Email" field="email" errors={state.errors} />
-     <label className="text-white mt-2 text-xl font-cardHeading" htmlFor="message">
+     <label className="text-black mt-2 text-xl font-cardHeading" htmlFor="message">
       Message
      </label>
      <textarea
       onChange={handleTextChange}
       maxLength={maxCharacters}
-      className="bg-gray-700 h-[100px] mt-2 font-cardContent rounded-xl p-2 text-white resize-none"
+      className="bg-black h-[100px] mt-2 font-cardContent rounded-xl p-2 text-white resize-none"
       id="message"
       name="message"
      />
@@ -85,7 +85,7 @@ function ContactForm(props: ContactFormProps) {
       {`${text.length}/${maxCharacters}`}
      </p>
      <button
-      className="bg-gray-700 opacity-60 text-white font-button text-2xl w-[150px] mx-auto mt-1 rounded-xl p-1 md:w-[250px] "
+      className="bg-green-400 text-white font-button text-2xl w-[150px] mx-auto mt-1 rounded-xl p-1 md:w-[250px] "
       type="submit"
       disabled={state.submitting}>
       Send

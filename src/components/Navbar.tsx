@@ -28,7 +28,7 @@ const NavLink = function NavLinkProps(props: NavLinkProps) {
  return (
   <Link legacyBehavior href={props.href}>
    <a
-    className={`${isActive ? 'text-green-600' : ''}
+    className={`${isActive ? 'text-green-200-t' : ''}
     hover:text-green-800`}>
     {props.children}
    </a>
@@ -49,8 +49,8 @@ export const Navbar = () => {
 
  console.log(nav);
  return (
-  <div className="text-gray-400 flex items-center justify-between font-header container m-auto p-5">
-   <h1 className=" hover:text-green-800 font-bold text-2xl">
+  <div className="text-green-400 flex items-center justify-between font-header container m-auto p-5">
+   <h1 className=" hover:text-green-600 font-bolder text-2xl">
     <Link href="/">Lewis Jones</Link>
    </h1>
    <nav>
@@ -67,7 +67,7 @@ export const Navbar = () => {
    {/* Toggle between each icon */}
    <div onClick={handleNav} className="hover:cursor-pointer block md:hidden">
     {nav ? (
-     <AiOutlineClose size={20} className="text-green-300" />
+     <AiOutlineClose size={20} className="text-green-400" />
     ) : (
      <AiOutlineMenu size={20} className="text-green-700" />
     )}

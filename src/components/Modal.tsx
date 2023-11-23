@@ -14,9 +14,9 @@ function Modal(props: ModalType) {
  return (
   <>
    {props.isOpen && (
-    <div onClick={props.toggleModal} className="modal modal-open">
+    <div onClick={props.toggleModal} className="modal modal-open ">
      <div className="modal-box bg-gray-800 mt-12">
-      <h3 className="font-cardHeading text-green-700 p-[10px] text-center text-[25px] font-bold">
+      <h3 className="font-cardHeading text-white p-[10px] text-center text-[25px] font-bold">
        Here's your random fact!
       </h3>
       {props.children}

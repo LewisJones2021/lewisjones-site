@@ -12,18 +12,18 @@ export const projectsArray = [
   link: 'https://www.pomolog.app/',
  },
  {
-  title: 'Photo Gallery',
+  title: 'SQL Pproject',
   description:
-   'Photo gallery is an app that usese an API to fetch different photos based on the users search. This project was built with Tailwind CSS and React.',
+   'This is a simple Go project that demonstrates how to interact with a PostgreSQL database. The project includes functionality to create a product table, insert sample products, and generate random product data.   ',
   imageSrc: '/react-image.jpeg',
-  link: 'https://github.com/LewisJones2021/React-Tailwind-Photo-Gallery',
+  link: 'https://github.com/LewisJones2021/firstSQLproject',
  },
  {
-  title: 'Signup Validation Form',
+  title: 'House Access Manager',
   description:
-   'Signup validation form checks to see if the user has inputed the required information. If not, the input field will turn red, stating an error. This project was built with HTML, CSS and JavaScript.',
+   'House Access Manager is a project born out of the need to manage multiple lockbox codes for various properties. The application allows users to add houses to a database through a form. Users can input the property name, and the system will display the corresponding access code along with additional notes about the property.',
   imageSrc: '/react-image.jpeg',
-  link: 'https://github.com/LewisJones2021/Sign-Up-Validation-Form',
+  link: 'https://github.com/LewisJones2021/house-access-frontend',
  },
  {
   title: 'Current Weather',
@@ -50,18 +50,18 @@ export const projectsArray = [
 
 export const projects = () => {
  return (
-  <div className=" container mx-auto">
-   <div className="flex flex-col items-center justify-center">
-    <h1 className=" mb-2 font-header text-gray-500 md:text-xl">Here are some examples of my projects.</h1>
+  <div className=" container flex flex-col items-center justify-center gap-10 p-5">
+   <div className="flex flex-col m-auto">
+    <h1 className=" mb-2 font-header text-black md:text-xl">Here are some examples of my projects.</h1>
     <Link href="https://github.com/LewisJones2021">
-     <p className="hover:text-green-800 font-header text-gray-400 md:text-xl mb-2">
+     <p className=" font-header text-black md:text-xl mb-2 text-center transition-transform transform hover:scale-110 ">
       {' '}
       Click here for a link to my GitHub!
      </p>
     </Link>
    </div>
    <div className="text-white ">
-    <div className="   grid gap-2 justify-center md:grid-cols-2 md:gap-2 lg:grid-cols-3 ">
+    <div className="grid gap-2 justify-center md:grid-cols-2 md:gap-2 lg:grid-cols-3 ">
      {projectsArray.map((card) => (
       <Card
        key={`projects`}
