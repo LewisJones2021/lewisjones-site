@@ -9,8 +9,8 @@ import FactGenerator from '@/components/FactGenerator';
 export const Home = () => {
  const { isOpen, toggleModal } = useModal();
  return (
-  <div className="flex flex-col items-center justify-center mt-[20px]">
-   <div className=" mx-auto text-white w-[480px] bg-gray-800 rounded-lg p-4 ">
+  <div className="flex flex-col items-center justify-center mt-[120px]">
+   <div className=" mx-auto text-white max-w-[480px] bg-gray-800 rounded-lg p-4">
     <section className="flex flex-col  text-center">
      <p className="md:text-2xl text-green-500 font-header uppercase mt-5">Software developer enthusiast</p>
      <button className="bg-gray-700 text-white font-header uppercase text-[18px] text-center rounded-md px-[8px] py-2 w-[190px] mx-auto mt-5 mb-5 transition-transform transform hover:scale-110">

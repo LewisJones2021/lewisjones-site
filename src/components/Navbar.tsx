@@ -76,9 +76,9 @@ export const Navbar = () => {
    {/* Mobile responsive */}
    <nav
     className={
-     nav ? ' z-50 bg-black fixed left-0 top-0 w-[30%] h-full pt-10 ease-in-out duration-500' : 'fixed left-[-100%] '
+     nav ? ' z-50 bg-black fixed left-0 top-0 w-[40%] h-full pt-10 ease-in-out duration-500' : 'fixed left-[-100%] '
     }>
-    <ul className="p-2 mt-5 uppercase font-header text-[16px] font-bold  ">
+    <ul className="p-2 mt-5 uppercase font-header text-[15px] font-bold  ">
      {pages.map((page) => (
       <li key={`page-${page.path}`} className="p-4 cursor-pointer font-bold hover:text-green-800">
        <NavLink activePage={router.pathname} href={page.path}>
